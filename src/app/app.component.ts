@@ -39,6 +39,11 @@ export class AppComponent {
       title: 'Технологии',
       url: '/technology',
       icon: 'easel'
+    },
+    {
+      title: 'Търси',
+      url: '/search',
+      icon: 'easel'
     }
   ];
   constructor(

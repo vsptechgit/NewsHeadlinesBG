@@ -7,16 +7,14 @@ const routes: Routes = [
     redirectTo: 'business',
     pathMatch: 'full'
   },
-  {path: 'business',
-    loadChildren: './business/business.module#BusinessComponentModule'},
-
+  { path: 'business', loadChildren: './business/business.module#BusinessComponentModule'},
   { path: 'entertainment', loadChildren: './entertainment/entertainment.module#EntertainmentComponentModule' },
   { path: 'health', loadChildren: './health/health.module#HealthComponentModule' },
   { path: 'science', loadChildren: './science/science.module#ScienceComponentModule' },
   { path: 'sport', loadChildren: './sport/sport.module#SportComponentModule' },
-  { path: 'technology', loadChildren: './technology/technology.module#TechnologyComponentModule' }
+  { path: 'technology', loadChildren: './technology/technology.module#TechnologyComponentModule' },
+  { path: 'search', loadChildren: './search/search.module#SearchComponentModule' },
 ];
-
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

@@ -21,7 +21,6 @@
       <ion-spinner *ngIf="!articles" name="dots"></ion-spinner>
     </ion-card-content>
   </ion-card>
-
   <ion-card *ngFor="let article of articles">
     <ion-img src="{{article.urlToImage}}"></ion-img>
     <ion-card-header>
